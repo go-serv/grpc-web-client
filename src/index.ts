@@ -1,5 +1,8 @@
-import * as client from './client';
+import * as clientImp from './client';
+import * as metaImp from './meta';
 
 export namespace grpc {
-	export const sum = client.sum;
+	export const HttpHeaders = metaImp.HttpHeaders;
+	export const Metadata = metaImp.Metadata;
+	export const client = clientImp.FetchClient;
 }

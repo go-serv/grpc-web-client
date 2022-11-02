@@ -1,9 +1,30 @@
-
+import {Meta} from './meta';
 
 export interface Client {
-	
+	unaryCall(m: Meta): void
+
+	clientStreamCall(): void
+
+	serverStreamCall(): void
+
+	bidirectionalCall(): void
 }
 
-export function sum(a: number, b: number): number {
-	return a + b
+
+export class FetchClient implements Client {
+	unaryCall(): void {
+
+	}
+
+	clientStreamCall(): void {
+
+	}
+
+	serverStreamCall(): void {
+
+	}
+
+	bidirectionalCall(): void {
+
+	}
 }
